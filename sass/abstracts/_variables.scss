@@ -1,0 +1,44 @@
+/*
+COLORS:
+Light green old: #7ed56f;
+Medium green old: #55c57a;
+Dark green old: #28b485;
+*/
+$color-primary: #00C46F;
+$color-primary-light: #00E75D;
+$color-primary-dark: #00B879;
+
+$color-secondary-light-old: #ffb900;
+$color-secondary-dark-old: #FF7730;
+$color-secondary-light: #ffb000;
+$color-secondary-dark: #ff5300;
+
+$color-tertiary-light: #3B8CDF;
+$color-tertiary-dark: #6F00FF;
+
+
+
+
+$color-gray-light-1: #efefef;
+$color-gray-light-2: #ddd;
+
+$color-gray-dark-1: #777;
+$color-gray-dark-2: #999;
+$color-gray-dark-3: #333;
+
+$color-white: #fff;
+$color-black:#000;
+
+// FONT:
+$default-font-size: 1.6rem;
+
+// GRID:
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// MARGIN-TOP OF THE FEATURE SECTION:
+$tan-6-deg: 0.10510423526; // The section skews -6 degrees
+$dist: calc(((100vw - 8rem)/2)*#{$tan-6-deg});
+$margin-top-section-features: calc(0rem - #{$dist});
