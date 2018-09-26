@@ -414,6 +414,7 @@ body {
         box-shadow: none; }
         .card__side--back {
           transform: rotateY(0);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
           padding-top: 4rem;
           border-top-right-radius: 0; }
@@ -436,6 +437,7 @@ body {
   @media (max-width: 37.5em) {
     .card__side--back--back {
       transform: rotateY(0);
+      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       padding-top: 4rem;
       border-top-right-radius: 0; } }
