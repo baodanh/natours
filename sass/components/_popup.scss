@@ -9,6 +9,34 @@
   opacity: 0;
   visibility: hidden;
   transition: all ease .2s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba($color-black, .3);
+
+  // @support (-webkit-backdrop-filter: blur(10px) or) {}
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    width: 75%;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .3);
+    @include centerVerticalHorizontal;
+    // border-radius: 4px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .3s .1s;
+  }
+
+  &__left {
+    width: calc(100%/3);
+    display: table-cell;
+  }
 
   &:target {
     opacity: 1;
